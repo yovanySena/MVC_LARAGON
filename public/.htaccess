@@ -1,9 +1,9 @@
 <IfModule mod_rewrite.c>
-    Options -Multiviews
-    RewriteEngine On
-    #RUTA
-    RewriteBase /basePHP/mvca/public
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.+)$ index.php?url=$1[QSA,L]
+Options -Multiviews
+RewriteEngine On
+#RUTA Cambiar de acuerdo al proyecto
+RewriteBase /cursophp/mvc/public
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
 </IfModule>
