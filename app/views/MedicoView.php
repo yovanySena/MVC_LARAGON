@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>LA VISTA DEL MEDICO</h1>
-    OK
+    <?php
+    var_dump($data);
+    ?>
 </body>
 </html>

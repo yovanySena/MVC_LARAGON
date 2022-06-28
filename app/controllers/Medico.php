@@ -2,14 +2,15 @@
 
 class Medico extends Controller
 {
+    private $MedicoModel;
     public function __construct()
     {
-        
+        $this->MedicoModel = $this->getModel('MedicoModel');
     }
     
     public function index()
     {
-        $data = []; //Temporal porque no hay data
+        $data = $this->MedicoModel->listarMedicos(); //Temporal porque no hay data
         $this->getView('MedicoView',$data);
     }
 
